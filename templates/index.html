@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IronPulse Gym — Train Smarter</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="dot"></span> IronPulse Gym
+      </a>
+      <nav>
+        <a href="{{ url_for('static', filename='index.html') }}" aria-current="page">Home</a>
+        <a href="{{ url_for('static', filename='about.html') }}">About</a>
+        <a href="{{ url_for('static', filename='membership.html') }}">Membership</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-wrap">
+      <div>
+        <h1>Train smarter. Get stronger. Feel unstoppable.</h1>
+        <p>24/7 access, certified coaches, and programs designed to match your goals—fat loss, muscle gain, or peak performance.</p>
+        <div style="display:flex; gap:.6rem; flex-wrap:wrap;">
+          <a class="button" href="membership.html">View Plans</a>
+          <a class="button outline" href="about.html">Learn More</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="badge">New member offer</div>
+        <h3 style="margin:.4rem 0 0;">First week free + PT assessment</h3>
+        <p class="lead">Kickstart your journey with a complimentary movement screen and a custom plan.</p>
+        <form onsubmit="return false" style="display:grid; gap:.6rem;">
+          <input class="input" placeholder="Enter your email" />
+          <button class="button" type="submit">Get Offer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section class="section">
+    <div class="container">
+      <h2>Programs built for real life</h2>
+      <p class="lead">Whether you’re new to the gym or chasing PRs, we’ve got you.</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="badge">Strength</div>
+          <h3>Hypertrophy Split</h3>
+          <p>Evidence-based programming for muscle growth using progressive overload and perfect form.</p>
+        </article>
+        <article class="card">
+          <div class="badge">Conditioning</div>
+          <h3>MetCon Circuits</h3>
+          <p>Short, intense sessions that torch calories and build work capacity without wasting time.</p>
+        </article>
+        <article class="card">
+          <div class="badge">Coaching</div>
+          <h3>1:1 Personal Training</h3>
+          <p>Work with certified coaches to master technique and stay accountable.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2>Members are seeing results</h2>
+      <div class="grid grid-3">
+        <blockquote class="card">“Lost 8kg in 12 weeks while gaining strength. The plan was simple and it worked.” — Ayesha</blockquote>
+        <blockquote class="card">“The coaches corrected my deadlift and I hit a new PR safely.” — Hamza</blockquote>
+        <blockquote class="card">“Great vibe, great equipment, open all day.” — Sara</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+      <div>© <span id="y"></span> IronPulse Gym</div>
+      <div><a href="membership.html">Join now</a></div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

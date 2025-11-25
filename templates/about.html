@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — IronPulse Gym</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="dot"></span> IronPulse Gym</a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="membership.html">Membership</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container split">
+      <div>
+        <div class="badge">Our story</div>
+        <h2>Built by coaches, powered by community</h2>
+        <p class="lead">We started IronPulse to make training simple, safe, and sustainable. No fads—just smart programming, supportive coaches, and quality equipment.</p>
+        <ul class="features">
+          <li>24/7 access with secure entry</li>
+          <li>Certified trainers & evidence-based programs</li>
+          <li>Clean, spacious facility with free weights & machines</li>
+          <li>Women-only hours available</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="images/gym-placeholder.jpg" alt="Gym floor preview" />
+        <p style="color:var(--muted); margin:.5rem 0 0;">Drop by for a free tour and movement screen.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <div class="card">
+        <h3>Mission</h3>
+        <p>Help people train for the life they want—strong, capable, confident.</p>
+      </div>
+      <div class="card">
+        <h3>Values</h3>
+        <p>Safety first, progress over perfection, and community over ego.</p>
+      </div>
+      <div class="card">
+        <h3>Equipment</h3>
+        <p>Competition racks, platforms, calibrated plates, machines, sleds, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap;">
+      <div>© <span id="y"></span> IronPulse Gym</div>
+      <div><a href="membership.html">Pick a plan</a></div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
